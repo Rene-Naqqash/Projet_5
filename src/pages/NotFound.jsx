@@ -1,10 +1,13 @@
+/** @format */
+
 import React from 'react';
 
 function NotFound() {
   return (
     <div>
-      <h1>404 - Page Non Trouvée</h1>
-      <p>La page que vous cherchez n'existe pas.</p>
+      <h1>404</h1>
+      <p>Oups! La page que vous demandez n'existe pas.</p>
+      <a href="/">Retourner sur la page d'accueil</a>
     </div>
   );
 }

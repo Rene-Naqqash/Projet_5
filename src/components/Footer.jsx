@@ -1,16 +1,16 @@
+/** @format */
+
 import React from 'react';
 import '../styles/footer.scss';
+import kasaLogo from '../assets/images/footer-logo.png';
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section about">
-          <h3>À propos</h3>
-          <p>
-            Cette application a été développée pour fournir des informations utiles à nos utilisateurs. 
-            &copy; 2024 Kasa.com | Tous droits réservés.
-          </p>
+          <img src={kasaLogo} alt="Logo Kasa" />
+          <p>&copy; 2024 Kasa. | All rights reserved</p>
         </div>
       </div>
     </footer>

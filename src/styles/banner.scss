@@ -1,3 +1,5 @@
+/** @format */
+
 .banner {
   width: 100%; // Largeur pleine
   height: 223px; // Hauteur de la bannière (modifiable)
@@ -9,7 +11,20 @@
   justify-content: center; // Centrer le texte horizontalement
   position: relative; // Position relative pour le texte
   border-radius: 25px;
-  
+
+  &.darken {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); // Overlay noir avec transparence
+      z-index: 1; // Pour être derrière le texte
+      border-radius: inherit;
+    }
+  }
 
   .banner-text {
     color: white; // Couleur du texte
@@ -35,7 +50,7 @@
       cursor: pointer;
       padding: 10px;
       pointer-events: auto;
-      
+
       &:hover {
         background-color: rgba(0, 0, 0, 0.8);
       }

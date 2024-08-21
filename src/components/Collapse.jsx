@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/collapse.scss';
+import downArrow from '../assets/svg/angle-down-solid.svg';
 
-function Collapse({ description, equipements, text, title }) {
+function Collapse({ text, title, equipements = []}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -12,10 +13,14 @@ function Collapse({ description, equipements, text, title }) {
     <div className="collapse">
       <div className="collapse-header" onClick={toggleCollapse}>
         <h3>{title}</h3>
-        <span className={`collapse-arrow ${isOpen ? 'open' : ''}`}>▼</span>
+        <span className={`collapse-arrow ${isOpen ? 'open' : ''}`}>
+          
+          <img src={downArrow} alt="Toggle collapse" />
+
+        </span>
       </div>
       <div className={`collapse-content ${isOpen ? 'open' : ''}`}>
-        {description && <p>{description}</p>}
+        {text && <p>{text}</p>}
         {equipements && (
           <ul>
             {equipements.map((item, index) => (
@@ -23,7 +28,6 @@ function Collapse({ description, equipements, text, title }) {
             ))}
           </ul>
         )}
-        {text && <p>{text}</p>}
       </div>
     </div>
   );
