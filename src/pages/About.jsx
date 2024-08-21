@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../components/Banner';
-import imageUrl from '../assets/images/logo512.png'
+import imageUrl from '../assets/images/rn-img-optimized.jpg'
 import Collapse from '../components/Collapse';
 
 function About() {

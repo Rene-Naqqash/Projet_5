@@ -6,7 +6,7 @@ import '../styles/navbar.scss';
 function Navbar() {
     return (
         <nav className="navbar">
-            <img src={logo} alt="Logo Kasa" />
+            <a href="/"><img src={logo} alt="Logo Kasa" /></a>
             <ul>
                 <li>
                     <Link to="/">Accueil</Link>

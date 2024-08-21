@@ -1,0 +1,30 @@
+.navbar {
+    width: 100%; // Largeur de la navbar
+    height: 68px; // Hauteur de la navbar
+    display: flex; // Utilisation de Flexbox
+    justify-content: space-between; // Pour répartir les éléments
+    align-items: center; // Centrer verticalement
+    gap: 0; // Pas d'espace entre les éléments
+    margin-top: 23px;
+    margin-bottom:25px;
+  
+    img{
+        width: 80%;
+    }
+
+    ul {
+      list-style: none; // Supprimer les puces de la liste
+      display: flex; // Afficher les éléments en ligne
+      gap: 37px; // Espace entre les éléments de la liste
+    }
+  
+    a {
+      text-decoration: none; // Supprimer le soulignement
+      color:black; 
+      font-size: 20px;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }

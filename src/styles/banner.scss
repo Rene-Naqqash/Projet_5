@@ -1,0 +1,52 @@
+.banner {
+  width: 100%; // Largeur pleine
+  height: 223px; // Hauteur de la bannière (modifiable)
+  background-color: rgba(0, 0, 0, 0.9);
+  background-size: cover; // Pour couvrir entièrement le conteneur
+  background-position: center; // Centrer l'image
+  display: flex;
+  align-items: center; // Centrer le texte verticalement
+  justify-content: center; // Centrer le texte horizontalement
+  position: relative; // Position relative pour le texte
+  border-radius: 25px;
+  
+
+  .banner-text {
+    color: white; // Couleur du texte
+    font-size: 24px; // Taille du texte (modifiable)
+    z-index: 2; // Pour être au-dessus de l'overlay
+    text-align: center; // Centrer le texte
+  }
+
+  .banner-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    pointer-events: none;
+
+    .banner-control {
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 10px;
+      pointer-events: auto;
+      
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      &.prev {
+        margin-left: 10px;
+      }
+
+      &.next {
+        margin-right: 10px;
+      }
+    }
+  }
+}

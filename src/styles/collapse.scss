@@ -1,0 +1,39 @@
+.collapse {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  overflow: hidden;
+
+  .collapse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+
+  .collapse-arrow {
+    transition: transform 0.3s ease;
+  }
+
+  .collapse-arrow.open {
+    transform: rotate(180deg); // La flèche tourne quand le collapse est ouvert
+  }
+
+  .collapse-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #fff;
+    padding: 0 10px;
+
+    p {
+      margin: 10px 0;
+    }
+  }
+
+  .collapse-content.open {
+    max-height: 200px; // Ajustez la hauteur selon le contenu
+  }
+}

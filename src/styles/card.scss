@@ -1,0 +1,21 @@
+.card {
+    width: 300px; // Largeur de la carte
+    margin: 10px; // Marge autour de chaque carte
+    border: 1px solid #ccc; // Bordure de la carte
+    border-radius: 8px; // Coins arrondis
+    overflow: hidden; // Masquer le débordement
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Ombre légère
+  
+    .card-image {
+      width: 100%; // Largeur pleine
+      height: 200px; // Hauteur de l'image
+      object-fit: cover; // Couvrir le conteneur
+    }
+  
+    .card-title {
+      padding: 10px; // Espacement interne
+      text-align: center; // Centrer le texte
+      font-size: 18px; // Taille du texte
+      color: #333; // Couleur du texte
+    }
+  }
