@@ -1,16 +1,21 @@
+/** @format */
 
-.App{
+$font-stack: Montserrat, sans-serif;
+// $primary-color: #333;
+
+.App {
   max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #FFFFFF;
-  font-family:"Montserrat", sans-serif;;
+  // color: $primary-color;
+  background-color: #ffffff;
+  font-family: $font-stack;
 }
-  
-  // Styles pour le conteneur de cartes
-  .card-container {
-    display: flex; // Utiliser Flexbox
-    flex-wrap: wrap; // Permettre aux cartes de s'enrouler
-    justify-content: center; // Centrer les cartes
-    margin-top: 20px; // Marge supérieure
-  }
+
+// Styles pour le conteneur de cartes
+.card-container {
+  display: flex; // Utiliser Flexbox
+  flex-wrap: wrap; // Permettre aux cartes de s'enrouler
+  justify-content: center; // Centrer les cartes
+  margin-top: 20px; // Marge supérieure
+}
