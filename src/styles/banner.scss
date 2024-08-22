@@ -1,15 +1,15 @@
 /** @format */
 
 .banner {
-  width: 100%; // Largeur pleine
-  height: 223px; // Hauteur de la bannière (modifiable)
+  width: 100%; 
+  height: 223px;
   background-color: rgba(0, 0, 0, 0.9);
   background-size: cover; // Pour couvrir entièrement le conteneur
   background-position: center; // Centrer l'image
   display: flex;
-  align-items: center; // Centrer le texte verticalement
-  justify-content: center; // Centrer le texte horizontalement
-  position: relative; // Position relative pour le texte
+  align-items: center; 
+  justify-content: center; 
+  position: relative; 
   border-radius: 25px;
 
   &.darken {
@@ -27,10 +27,16 @@
   }
 
   .banner-text {
-    color: white; // Couleur du texte
-    font-size: 24px; // Taille du texte (modifiable)
-    z-index: 2; // Pour être au-dessus de l'overlay
-    text-align: center; // Centrer le texte
+    color: white; 
+    font-size: 48px; 
+    z-index: 2; 
+    text-align: center; 
+    font-weight: 700;
+    text-shadow:
+    -1px -1px 0 black,  
+    1px -1px 0 black, 
+    -1px 1px 0 black,   
+    1px 1px 0 black; 
   }
 
   .banner-controls {
