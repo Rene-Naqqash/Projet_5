@@ -12,8 +12,8 @@ import NotFound from './pages/NotFound';
 function App() {
   return (
     <Router>
-      {' '}
       {/* Le Router doit envelopper l'ensemble de l'application */}
+      <div>
       <div className="App">
         <Navbar />
         <Routes>
@@ -26,6 +26,7 @@ function App() {
           <Route path="*" element={<NotFound />} />{' '}
           {/* Route pour la page 404 */}
         </Routes>
+        </div>
         <Footer />
       </div>
     </Router>

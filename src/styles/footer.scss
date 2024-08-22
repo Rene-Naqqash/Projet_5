@@ -1,13 +1,19 @@
 /** @format */
 
 .footer {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  height: 209px;
   background-color: #000000;
   color: #fff;
-  padding: 20px 0;
   text-align: center;
-  margin-top: auto;
+
 
   .footer-content {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,16 +21,18 @@
     padding: 20px;
 
     .footer-section {
-      h3 {
-        margin-bottom: 10px;
-        font-size: 18px;
-        text-transform: uppercase;
-      }
-
       p {
-        font-size: 14px;
+        font-size: 24px;
         line-height: 1.5;
+        margin-bottom: 0;
       }
     }
+  }
+}
+
+// le footer occupera toute la largeur pour les petits ecrans
+@media screen and (max-width: 1440px) {
+  .footer {
+    width: 100%; 
   }
 }

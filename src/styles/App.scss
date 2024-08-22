@@ -14,7 +14,7 @@ body {
   font-family: $font-stack;
 }
 
-// Styles pour le conteneur de cartes
+// Styles pour le conteneur de cartes dans le composant Home
 .card-container {
   display: flex; // Utiliser Flexbox
   flex-wrap: wrap; // Permettre aux cartes de s'enrouler

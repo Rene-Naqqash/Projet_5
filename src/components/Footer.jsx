@@ -10,7 +10,7 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-section about">
           <img src={kasaLogo} alt="Logo Kasa" />
-          <p>&copy; 2024 Kasa. | All rights reserved</p>
+          <p>&copy; 2024 Kasa. All rights reserved</p>
         </div>
       </div>
     </footer>
