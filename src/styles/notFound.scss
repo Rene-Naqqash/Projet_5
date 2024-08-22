@@ -1,0 +1,29 @@
+
+$orange-color: #ff6060;
+
+.notFound-h1{
+    color: $orange-color;
+    font-size: 288px;
+    margin: 70px 0;
+}
+
+.notFound-p{
+    color: $orange-color;
+    // margin: 0;
+    font-size: 36px;
+    margin:0 0 70px;
+}
+
+.notFoundPage{
+    text-align: center;
+    a{
+        div{
+            text-decoration: underline;
+            color: black;
+            font-size: 18px;
+            font-weight: 500;
+            margin:0 0 70px;
+            display: inline-block;
+        }
+    }
+}

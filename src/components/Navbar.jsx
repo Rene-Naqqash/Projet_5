@@ -12,7 +12,7 @@ function Navbar() {
                     <Link to="/">Accueil</Link>
                 </li>
                 <li>
-                    <Link to="/about">À propos</Link> {/* Lien vers la page À propos */}
+                    <Link to="/about">À Propos</Link> {/* Lien vers la page À propos */}
                 </li>
             </ul>
         </nav>

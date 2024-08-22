@@ -1,7 +1,8 @@
 /** @format */
-
+// j'ai rajouté le font globale
 $font-stack: Montserrat, sans-serif;
-$orange-color: #ff6060;
+
+
 body {
   margin: 0;
 }
@@ -9,15 +10,14 @@ body {
   max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
-  // color: $primary-color;
   background-color: #ffffff;
   font-family: $font-stack;
 }
 
 // Styles pour le conteneur de cartes dans le composant Home
 .card-container {
-  display: flex; // Utiliser Flexbox
-  flex-wrap: wrap; // Permettre aux cartes de s'enrouler
-  justify-content: center; // Centrer les cartes
-  margin-top: 20px; // Marge supérieure
+  display: flex; 
+  flex-wrap: wrap; // Permettre aux cartes de s'enrouler si y a plus de place 
+  justify-content: center; 
+  margin-top: 20px; 
 }

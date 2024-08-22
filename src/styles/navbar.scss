@@ -5,7 +5,7 @@
     justify-content: space-between; 
     align-items: center; 
     gap: 0;
-    margin-top: 23px;
+    margin-top: 38px;
     margin-bottom:25px;
   
     img{
@@ -15,13 +15,14 @@
     ul {
       list-style: none; 
       display: flex; 
-      gap: 37px; 
+      gap: 47px; 
     }
   
     a {
       text-decoration: none;
       color:black; 
-      font-size: 20px;
+      font-size: 24px;
+      font-weight: 500;
   
       &:hover {
         text-decoration: underline;
