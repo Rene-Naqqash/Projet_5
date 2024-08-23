@@ -15,9 +15,19 @@ body {
 }
 
 // Styles pour le conteneur de cartes dans le composant Home
-.card-container {
-  display: flex; 
-  flex-wrap: wrap; // Permettre aux cartes de s'enrouler si y a plus de place 
-  justify-content: center; 
-  margin-top: 20px; 
+.flex-container-cards-div{
+  margin: 35px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  box-sizing: border-box;
+
+  .card-container {
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    margin: 50px 0; 
+  }
 }
