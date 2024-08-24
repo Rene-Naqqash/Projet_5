@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/collapse.scss';
-import downArrow from '../assets/svg/angle-down-solid.svg';
+import upArrow from '../assets/svg/angle-up-solid.svg';
 
 function Collapse({ text, title, equipements = [], logementCollapse = false}) {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ function Collapse({ text, title, equipements = [], logementCollapse = false}) {
         <h3>{title}</h3>
         <span className={`collapse-arrow ${isOpen ? 'open' : ''}`}>
           
-          <img src={downArrow} alt="Toggle collapse" />
+          <img src={upArrow} alt="Toggle collapse" />
 
         </span>
       </div>
