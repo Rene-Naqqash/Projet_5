@@ -19,7 +19,15 @@ $orange-color: #ff6060;
     background-color: $orange-color;
     cursor: pointer;
     color: white;
+    h3{
+      margin-left:14px;
+    }
+    .collapse-arrow{
+      margin-right:18px;
+    }
   }
+
+
 
   .collapse-arrow {
     transition: transform 0.3s ease;
@@ -42,6 +50,27 @@ $orange-color: #ff6060;
   }
 
   .collapse-content.open {
-    max-height: 200px; // Ajustez la hauteur selon le contenu
+    max-height: 250px; // Ajustez la hauteur selon le contenu
   }
+}
+
+.collapse.logementCollapse{
+  // width: 582px;
+  border-radius: 5px;
+  flex: 1;
+
+  .collapse-header {
+    
+    h3{
+      margin-left:14px;
+    }
+    .collapse-arrow{
+      margin-right:18px;
+    }
+  }
+
+  .collapse-content.open {
+    max-height: 330px; // Ajustez la hauteur selon le contenu
+  }
+ 
 }

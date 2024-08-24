@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/collapse.scss';
 import downArrow from '../assets/svg/angle-down-solid.svg';
 
-function Collapse({ text, title, equipements = []}) {
+function Collapse({ text, title, equipements = [], logementCollapse = false}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -10,7 +10,7 @@ function Collapse({ text, title, equipements = []}) {
   };
 
   return (
-    <div className="collapse">
+    <div className={`collapse ${logementCollapse ? 'logementCollapse' : ''}`}>
       <div className="collapse-header" onClick={toggleCollapse}>
         <h3>{title}</h3>
         <span className={`collapse-arrow ${isOpen ? 'open' : ''}`}>

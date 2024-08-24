@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import '../styles/banner.scss';
+import chevronLeft from '../assets/svg/chevron-left-solid.svg'
+import chevronRight from '../assets/svg/chevron-right-solid.svg'
 
 function Banner({ image, images = [], text, darken = false }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,12 +33,11 @@ function Banner({ image, images = [], text, darken = false }) {
     >
       {images.length > 0 && (
         <div className="banner-controls">
-          <button className="banner-control prev" onClick={handlePrevClick}>
-            ❮
-          </button>
-          <button className="banner-control next" onClick={handleNextClick}>
-            ❯
-          </button>
+
+          <img src={chevronLeft} alt="" className="banner-control prev" onClick={handlePrevClick}/>
+        
+          <img src={chevronRight} alt="" className="banner-control next" onClick={handleNextClick}/>
+          
         </div>
       )}
       <div className="banner-text">{text}</div>

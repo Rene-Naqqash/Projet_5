@@ -49,16 +49,16 @@
     pointer-events: none;
 
     .banner-control {
-      background-color: rgba(0, 0, 0, 0.5);
       border: none;
       color: white;
       font-size: 24px;
       cursor: pointer;
       padding: 10px;
       pointer-events: auto;
+      width: 70px;
 
       &:hover {
-        background-color: rgba(0, 0, 0, 0.8);
+        // background-color: rgba(0, 0, 0, 0.8);
       }
 
       &.prev {
@@ -69,5 +69,14 @@
         margin-right: 10px;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .banner {  .banner-controls {
+        .banner-control {
+        width: 30px;
+        }
+      }
   }
 }
