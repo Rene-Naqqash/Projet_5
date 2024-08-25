@@ -14,8 +14,8 @@ function Home() {
       <Banner image={bannerImg} text={bannerText} darken={true} />
       <div className='flex-container-cards-div'>
       <div className="card-container">
-        {logement.map((card, index) => (
-          <Card key={index} id={card.id} img={card.cover} title={card.title} />
+        {logement.map((card) => (
+          <Card key={card.id} id={card.id} img={card.cover} title={card.title} />
         ))}
       </div>
       </div>

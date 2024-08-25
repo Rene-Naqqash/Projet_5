@@ -19,9 +19,7 @@ function Banner({ image, images = [], text, darken = false }) {
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
-
-  console.log(images);
-
+  
   return (
     <div
       className={`banner ${darken ? 'darken' : ''}`}

@@ -4,7 +4,7 @@ $orange-color: #ff6060;
 
 .collapse {
   max-width: 1023px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -56,7 +56,7 @@ $orange-color: #ff6060;
 
 .collapse.logementCollapse{
   // width: 582px;
-  border-radius: 5px;
+  // border-radius: 10px;
   flex: 1;
 
   .collapse-header {
