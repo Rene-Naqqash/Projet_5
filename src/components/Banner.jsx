@@ -29,14 +29,20 @@ function Banner({ image, images = [], text, darken = false }) {
         })`,
       }}
     >
-      {images.length > 0 && (
-        <div className="banner-controls">
+      {images.length > 1 && (
+        <>
+          <div className="banner-controls">
 
-          <img src={chevronLeft} alt="" className="banner-control prev" onClick={handlePrevClick}/>
-        
-          <img src={chevronRight} alt="" className="banner-control next" onClick={handleNextClick}/>
+            <img src={chevronLeft} alt="" className="banner-control prev" onClick={handlePrevClick}/>
           
-        </div>
+            <img src={chevronRight} alt="" className="banner-control next" onClick={handleNextClick}/>
+            
+          </div>
+          {/* Indicateur du numéro de l'image */}
+          <div className="banner-indicator">
+            {currentIndex + 1} / {images.length}
+          </div>
+       </>
       )}
       <div className="banner-text">{text}</div>
     </div>

@@ -16,7 +16,7 @@ body {
 
 // Styles pour le conteneur de cartes dans le composant Home
 .flex-container-cards-div{
-  margin: 35px 0;
+  margin: 38px 0;
   display: flex;
   justify-content: center;
   background-color: #F6F6F6;
@@ -30,4 +30,9 @@ body {
     grid-row-gap: 50px;
     margin: 50px 0; 
   }
+}
+
+// About Page 
+.collapseAbout{
+  margin: 38px 0;
 }

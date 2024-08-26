@@ -83,6 +83,8 @@ $orange-color: #ff6060;
     max-width: 1240px;
     display: flex;
     column-gap: 76px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   p {
@@ -92,8 +94,8 @@ $orange-color: #ff6060;
   }
 
   ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style-type: none;
+    padding-left: 2px;
 
     li {
       font-size: 16px;

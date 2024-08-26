@@ -67,13 +67,35 @@
       }
     }
   }
+
+  /* Indicateur du numéro de l'image */
+  .banner-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 4;
+  }
 }
 
 @media only screen and (max-width: 575px) {
-  .banner {  .banner-controls {
+  .banner { 
+     .banner-controls {
         .banner-control {
         width: 30px;
         }
+      }
+
+      .banner-text {
+        font-size: 24px; /* Ajustement de la taille de la police sur mobile */
+      }
+  
+      // Masquer l'indicateur 
+      .banner-indicator {
+        display: none;
       }
   }
 }
