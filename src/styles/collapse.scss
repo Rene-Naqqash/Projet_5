@@ -5,8 +5,7 @@ $orange-color: #ff6060;
 .collapse {
   max-width: 1023px;
   border-radius: 10px;
-
-  margin-bottom:30px ;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -20,15 +19,15 @@ $orange-color: #ff6060;
     background-color: $orange-color;
     cursor: pointer;
     color: white;
-    h3{
-      margin-left:14px;
+
+    h3 {
+      margin-left: 14px;
     }
-    .collapse-arrow{
-      margin-right:18px;
+
+    .collapse-arrow {
+      margin-right: 18px;
     }
   }
-
-
 
   .collapse-arrow {
     transition: transform 0.3s ease;
@@ -48,46 +47,37 @@ $orange-color: #ff6060;
     p {
       margin: 10px 0;
     }
-
   }
 
   .collapse-content.open {
-    max-height: 250px; 
+    max-height: 250px;
   }
 }
 
-
 @media (max-width: 575.98px) {
-
-  .collapse{
+  .collapse {
     margin-bottom: 20px;
     border-radius: 5px;
-    .collapse-header{
+
+    .collapse-header {
       height: 30px;
-    }
-  }
-  .collapse-header {
-    
-    h3{
-      font-size: 13px;
-      font-weight: 600;
-    }
-    
-    .collapse-arrow{
-      img{
-        height:21px;
+      
+      h3 {
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .collapse-arrow {
+        img {
+          height: 21px;
+        }
       }
     }
-
-
-
   }
 
-  .collapse-content{
-    p{
+  .collapse-content {
+    p {
       font-size: 12px;
-    } 
+    }
   }
-
-      
 }

@@ -21,7 +21,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(0, 0, 0, 0.6); // Overlay noir avec transparence
+      background-color: rgba(0, 0, 0, 0.6); // Superposition noire avec transparence
       z-index: 1; // Pour être derrière le texte
       border-radius: inherit;
     }
@@ -34,16 +34,14 @@
     text-align: center; 
     font-weight: 700;
     text-shadow:
-    -1px -1px 0 black,  
-    1px -1px 0 black, 
-    -1px 1px 0 black,   
-    1px 1px 0 black; 
-    
+      -1px -1px 0 black,  
+      1px -1px 0 black, 
+      -1px 1px 0 black,   
+      1px 1px 0 black; 
   }
 
   .banner-controls {
     position: absolute;
-    
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -69,7 +67,7 @@
     }
   }
 
-  /* Indicateur du numéro de l'image */
+  // Indicateur du numéro de l'image
   .banner-indicator {
     position: absolute;
     bottom: 20px;
@@ -83,70 +81,66 @@
 }
 
 @media (max-width: 575.98px) {
-  /* Styles for phones */
+  
   .banner { 
     height: 255px;
     border-radius: 10px;
+    
     &.darken {
       height: 111px;
-      }
+    }
 
-     .banner-controls {
-        .banner-control {
+    .banner-controls {
+      .banner-control {
         width: 30px;
-        }
       }
+    }
 
-      .banner-text {
-        width: 225px;
-        height: 48px;
-        font-size: 24px; /* Ajustement de la taille de la police sur mobile */
-        text-align: left;
-        margin-right: 55px;
-        margin-bottom: 9px;
-      }
-      
-      // Masquer l'indicateur 
-      .banner-indicator {
-        display: none;
-      }
+    .banner-text {
+      width: 225px;
+      height: 48px;
+      font-size: 24px; 
+      text-align: left;
+      margin-right: 55px;
+      margin-bottom: 9px;
+    }
+    
+    // Masquer l'indicateur 
+    .banner-indicator {
+      display: none;
+    }
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  /* Styles for small devices */
+  
   .banner { 
     border-radius: 10px;
-     .banner-controls {
-        .banner-control {
+    
+    .banner-controls {
+      .banner-control {
         width: 30px;
-        }
       }
+    }
 
-      .banner-text {
-        font-size: 30px; /* Ajustement de la taille de la police sur mobile */
-        text-align: center;
-      }
-      
-      
+    .banner-text {
+      font-size: 30px; 
+      text-align: center;
+    }
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  /* Styles for tablets and small desktops */
   .banner { 
-     .banner-controls {
-        .banner-control {
+    .banner-controls {
+      .banner-control {
         width: 30px;
-        }
       }
+    }
 
-      .banner-text {
-        font-size: 36px; /* Ajustement de la taille de la police sur mobile */
-        text-align: center;
-      }
-      
-      
+    .banner-text {
+      font-size: 36px; 
+      text-align: center;
+    }
   }
-
 }
