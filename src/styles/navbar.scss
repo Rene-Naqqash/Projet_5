@@ -29,3 +29,39 @@
       }
     }
   }
+
+  @media (max-width: 575.98px) {
+    /* Styles for phones */
+    .navbar { 
+
+      margin: 0 0 25px;
+
+
+      img{
+        width: 145px ;
+      }
+      
+      a{
+        font-size: 12px;
+      }
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar { 
+
+      margin: 0 0 30px;
+      
+      a{
+        font-size: 19px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar { 
+
+      margin-bottom: 40px;
+      
+    }
+  }

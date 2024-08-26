@@ -9,7 +9,6 @@ $orange-color: #ff6060;
 
 .notFound-p{
     color: $orange-color;
-    // margin: 0;
     font-size: 36px;
     margin:0 0 70px;
 }
@@ -27,3 +26,81 @@ $orange-color: #ff6060;
         }
     }
 }
+
+@media (max-width: 575.98px) {
+    /* Styles for phones */
+    .notFound-h1{
+        
+        font-size: 96px;
+       
+    }
+
+    .notFound-p{
+       
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .notFoundPage{
+        text-align: center;
+        a{
+            div{
+                
+                font-size: 14px;
+                font-weight: 500;
+                
+            }
+        }
+    }
+  }
+
+
+  @media (min-width: 576px) and (max-width: 1000px) {
+    .notFound-h1 {
+      font-size: 192px;  // Taille réduite mais toujours imposante pour les tablettes
+      margin: 50px 0;
+    }
+  
+    .notFound-p {
+      font-size: 24px;   // Taille de texte augmentée par rapport à la version mobile
+      margin: 0 0 50px;
+    }
+  
+    .notFoundPage {
+      text-align: center;
+  
+      a {
+        div {
+          font-size: 16px;  // Taille légèrement augmentée pour être plus lisible
+          font-weight: 500;
+          margin: 0 0 50px;
+        }
+      }
+    }
+  }
+  
+
+  @media (min-width: 1000.1px) and (max-width: 1260px) {
+    .notFound-h1 {
+      font-size: 240px;  // Taille adaptée pour les petits à moyens écrans desktop
+      margin: 60px 0;
+    }
+  
+    .notFound-p {
+      font-size: 32px;  // Texte légèrement plus grand pour une meilleure lisibilité
+      margin: 0 0 60px;
+    }
+  
+    .notFoundPage {
+      text-align: center;
+  
+      a {
+        div {
+          font-size: 18px;  // Taille de texte appropriée pour ces écrans
+          font-weight: 500;
+          margin: 0 0 60px;
+        }
+      }
+    }
+  }
+  

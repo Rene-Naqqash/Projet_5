@@ -56,37 +56,38 @@ $orange-color: #ff6060;
   }
 }
 
-.collapse.logementCollapse{
-  // width: 582px;
-  border-radius: 10px;
-  flex: 1;
 
+@media (max-width: 575.98px) {
+
+  .collapse{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    .collapse-header{
+      height: 30px;
+    }
+  }
   .collapse-header {
     
     h3{
-      margin-left:14px;
+      font-size: 13px;
+      font-weight: 600;
     }
+    
     .collapse-arrow{
-      margin-right:18px;
+      img{
+        height:21px;
+      }
     }
+
+
+
   }
 
-  .collapse-content.open {
-    max-height: 330px; // Ajustez la hauteur selon le contenu
-  }
- 
-}
-
-.info-collapse-container {
-  // Synchronisation des hauteurs
-  .collapse {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  .collapse-content{
+    p{
+      font-size: 12px;
+    } 
   }
 
-  .collapse-content {
-    flex-grow: 1;
-    // overflow: hidden;
-  }
+      
 }

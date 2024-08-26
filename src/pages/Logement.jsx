@@ -38,7 +38,7 @@ function Logement() {
         <div className='infoLogement'>
           <h1>{logementFilter.title}</h1>
           <p>{logementFilter.location}</p>
-          {tags && (<div>
+          {tags && (<div className='tagsDiv'>
             {tags.map((tagItem, index) => (<span key={index}>{tagItem}</span>))}
           </div>)}
         </div>
