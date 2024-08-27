@@ -1,10 +1,12 @@
+/** @format */
+
 $orange-color: #ff6060;
 
 .logement {
   .container-logement {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     // Titre, lieu et tags
     .infoLogement {
@@ -43,8 +45,8 @@ $orange-color: #ff6060;
       flex-direction: column;
 
       .hostInfo {
-        display: flex; 
-        text-align: right; 
+        display: flex;
+        text-align: right;
         align-items: center;
         margin-top: 16px;
 
@@ -58,9 +60,9 @@ $orange-color: #ff6060;
         }
 
         img {
-          width: 64px; 
-          height: 64px; 
-          border-radius: 50%; 
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
           margin-left: 7px;
         }
       }
@@ -119,7 +121,7 @@ $orange-color: #ff6060;
   }
 
   .collapse-content.open {
-    max-height: 330px; 
+    max-height: 330px;
   }
 }
 
@@ -138,7 +140,7 @@ $orange-color: #ff6060;
 @media (max-width: 575.98px) {
   .logement {
     .container-logement {
-      align-items: stretch; 
+      align-items: stretch;
       flex-direction: column;
 
       .infoLogement {
@@ -188,9 +190,9 @@ $orange-color: #ff6060;
           }
 
           img {
-            width: 32px; 
-            height: 32px; 
-            border-radius: 50%; 
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
           }
         }
 
@@ -213,7 +215,8 @@ $orange-color: #ff6060;
         font-weight: 600;
       }
 
-      p, li {
+      p,
+      li {
         font-size: 12px;
       }
     }
@@ -232,7 +235,7 @@ $orange-color: #ff6060;
   }
 }
 
-@media (min-width: 576px) and (max-width: 1024px) {
+@media (min-width: 576px) and (max-width: 799px) {
   .logement {
     .container-logement {
       flex-direction: column;
@@ -266,7 +269,7 @@ $orange-color: #ff6060;
       .host-rating-div {
         flex-direction: row-reverse;
         justify-content: space-between;
-        width: 100%; 
+        width: 100%;
 
         .hostInfo {
           display: flex;
@@ -281,7 +284,7 @@ $orange-color: #ff6060;
           }
 
           img {
-            width: 40px; 
+            width: 40px;
             height: 40px;
             border-radius: 50%;
           }
@@ -314,7 +317,8 @@ $orange-color: #ff6060;
         font-size: 16px;
       }
 
-      p, li {
+      p,
+      li {
         font-size: 14px;
       }
     }
